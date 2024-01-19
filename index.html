@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wallpoet&display=swap" rel="stylesheet">
+    <title>Albion's Website</title>
+</head>
+<body>
+    <div class="complet">
+    <ul><br><br><br><br>
+        <li><a href="#"  data-text="Name Lastname"><img src="img1.jfif">Name Lastname</a></li>
+        <li><a href="#"  data-text="Birthday"><img src="img2.jpg">Birthday</a></li>
+        <li><a href="#"  data-text="Adress"><img src="img3.jpeg">Adress</a></li>
+        <li><a href="#"  data-text="School"><img src="img4.jpg">School</a></li>
+        <li><a href="#"  data-text="Profesion"><img src="img5.webp">Profesion</a></li>
+    </ul>
+    <script>
+        let pos = document.documentElement;
+        pos.addEventListener('mousemove', e => {
+            pos.style.setProperty('--x', e.clientX + 'px');
+            pos.style.setProperty('--y', e.clientY + 'px');
+        })
+        const shit =document.querySelector('.shit')
+        console.log(shit)
+    </script>
+
+</div>
+<h1 class="title"> MY Site</h1>
+    <br><br><br><br><br><br><br>
+<div class="container">
+    <div class="container2">
+        <div class="box one" style="--img:url(foto1.jpeg);" data-text="Travel"></div>
+        <div class="box two" style="--img:url(foto2.png);" data-text="F1"><a class="shit" href="../Project 2.0/index.html"></a></div>
+        <div class="box three" style="--img:url(foto3.webp);" data-text="Peaky Blinders"></div>
+        <div class="box four" style="--img:url(foto4.jpg);" data-text="Old Timer"></div>
+        <div class="box five" style="--image:url(foto5.jpg);" data-text="Squid Game"></div>
+    </div>
+</div>
+</body>
+</html>
